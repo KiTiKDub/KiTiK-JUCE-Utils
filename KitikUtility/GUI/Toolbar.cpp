@@ -1,4 +1,4 @@
-#include "KitikToolbar.h"
+#include "Toolbar.h"
 
 //==============================================================================
 KitikToolbarItemComponent::KitikToolbarItemComponent(const int itemId_,

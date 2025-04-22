@@ -8,7 +8,7 @@
   ==============================================================================
 */
 
-#include "KitikLookAndFeel.h"
+#include "LookAndFeel.h"
 
 namespace kitik
 {
