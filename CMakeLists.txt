@@ -30,5 +30,3 @@ add_library(
 	KitikUtility/GUI.h
 	KitikUtility/Utility.h
 	KitikUtilityHeader.h )
-
-target_include_directories(juce PRIVATE ${juce_SOURCE_DIR})
