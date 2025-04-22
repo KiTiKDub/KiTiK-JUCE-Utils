@@ -1,12 +1,3 @@
-include(FetchContent)
-FetchContent_Declare(
-  juce
-  GIT_REPOSITORY https://github.com/juce-framework/JUCE
-  GIT_TAG master
-  GIT_SHALLOW ON
-)
-FetchContent_MakeAvailable(juce)
-
 add_library(
 	kitik-utils
 	KitikUtility/DSP/overSampleGain.h

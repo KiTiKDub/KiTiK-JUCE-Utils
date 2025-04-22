@@ -12,7 +12,7 @@
 #include "juce_gui_basics/juce_gui_basics.h"
 #include "juce_core/juce_core.h"
 #include "PresetManager.h"
-#include "../GUI/KitikLookAndFeel.h"
+#include "../GUI/LookAndFeel.h"
 
 namespace kitik
 {
