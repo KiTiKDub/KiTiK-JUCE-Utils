@@ -1,19 +1,23 @@
 add_library(
 	kitik-utils
-	DSP/overSampleGain.h
-	DSP/overSampleGain.cpp
-	GUI/dragToDawButton.h
-	GUI/LookAndFeel.h
-	GUI/LookAndFeel.cpp
-	GUI/PresetManager.h
-	GUI/PresetManager.cpp
-	GUI/PresetPanel.h
-	GUI/PresetPanel.cpp
-	GUI/RotarySliderWithLabels.h
-	GUI/RotarySliderWithLabels.cpp
-	GUI/SliderWithLabels.h
-	GUI/SliderWithLabels.cpp
-	GUI/Toolbar.h
-	GUI/Toolbar.cpp
-	Utility/AsyncUpdater.h
-	Utility/BrowserComponent.h )
+	KitikUtility/DSP/overSampleGain.h
+	KitikUtility/DSP/overSampleGain.cpp
+	KitikUtility/GUI/dragToDawButton.h
+	KitikUtility/GUI/LookAndFeel.h
+	KitikUtility/GUI/LookAndFeel.cpp
+	KitikUtility/GUI/PresetManager.h
+	KitikUtility/GUI/PresetManager.cpp
+	KitikUtility/GUI/PresetPanel.h
+	KitikUtility/GUI/PresetPanel.cpp
+	KitikUtility/GUI/RotarySliderWithLabels.h
+	KitikUtility/GUI/RotarySliderWithLabels.cpp
+	KitikUtility/GUI/SliderWithLabels.h
+	KitikUtility/GUI/SliderWithLabels.cpp
+	KitikUtility/GUI/Toolbar.h
+	KitikUtility/GUI/Toolbar.cpp
+	KitikUtility/Utility/AsyncUpdater.h
+	KitikUtility/Utility/BrowserComponent.h
+	KitikUtility/DSP.h
+	KitikUtility/GUI.h
+	KitikUtility/Utility.h
+	KitikUtilityHeader.h )
