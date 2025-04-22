@@ -47,29 +47,26 @@ namespace kitik
     template <
         typename Attachment,
         typename APVTS,
-        typename Params,
         typename ParamName,
         typename SliderType
     >
     void makeAttachment(std::unique_ptr<Attachment>& attachment,
         APVTS& apvts,
-        const Params& params,
         const ParamName& name,
         SliderType& slider)
     {
         attachment = std::make_unique<Attachment>(apvts,
-            params.at(name),
+            name,
             slider);
     }
 
     template <
         typename APVTS,
-        typename Params,
         typename Name
     >
-    juce::RangedAudioParameter& getParam(APVTS& apvts, Params& params, const Name& name)
+    juce::RangedAudioParameter& getParam(APVTS& apvts, const Name& name)
     {
-        auto param = apvts.getParameter(params.at(name));
+        auto param = apvts.getParameter(name);
 
         return *param;
     }
@@ -81,11 +78,11 @@ namespace kitik
         typename ParamType,
         typename SuffixType
     >
-    void addLabelPairs(Labels& labels, const int posOne, const int posTwo, const ParamType& param, const SuffixType& suffix, const int fontSize = 14, std::vector<juce::String> array = std::vector<juce::String>())
+    void addLabelPairs(Labels& labels, const int posOne, const int posTwo, const ParamType& param, const SuffixType& suffix, const int fontSizeTop = 14, const int fontSizeBottom = 14, std::vector<juce::String> array = std::vector<juce::String>())
     {
         labels.clear();
-        labels.add({ posOne, getValString(param, true, suffix, array), fontSize });
-        labels.add({ posTwo, getValString(param, false, suffix, array), fontSize });
+        labels.add({ posOne, getValString(param, true, suffix, array), fontSizeTop });
+        labels.add({ posTwo, getValString(param, false, suffix, array), fontSizeBottom });
     }
 }
 
