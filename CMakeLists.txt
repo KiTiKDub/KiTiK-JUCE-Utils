@@ -1,0 +1,19 @@
+add_library(
+	kitik-utils
+	DSP/overSampleGain.h
+	DSP/overSampleGain.cpp
+	GUI/dragToDawButton.h
+	GUI/LookAndFeel.h
+	GUI/LookAndFeel.cpp
+	GUI/PresetManager.h
+	GUI/PresetManager.cpp
+	GUI/PresetPanel.h
+	GUI/PresetPanel.cpp
+	GUI/RotarySliderWithLabels.h
+	GUI/RotarySliderWithLabels.cpp
+	GUI/SliderWithLabels.h
+	GUI/SliderWithLabels.cpp
+	GUI/Toolbar.h
+	GUI/Toolbar.cpp
+	Utility/AsyncUpdater.h
+	Utility/BrowserComponent.h )
