@@ -79,7 +79,7 @@ namespace kitik
         typename ParamType,
         typename SuffixType
     >
-    void addLabelPairs(Labels& labels, const ParamType& param, const SuffixType& suffix, const int fontSizeTop = 14 const int fontSizeBottom = 14)
+    void addLabelPairs(Labels& labels, const ParamType& param, const SuffixType& suffix, const int fontSizeTop = 14, const int fontSizeBottom = 14)
     {
         labels.clear();
         labels.add({ 1, getValString(param, true, suffix), fontSizeTop });
