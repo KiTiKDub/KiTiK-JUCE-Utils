@@ -8,7 +8,7 @@
   ==============================================================================
 */
 
-#include "rotarySliderWithLabels.h"
+#include "RotarySliderWithLabels.h"
 
 namespace kitik
 {
